@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_Mecklai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Mecklai"
+        android:textAlignment="center"
+        android:textColor="#26027C"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_Financial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@+id/tv_Mecklai"
+        android:text="Financial"
+        android:textAlignment="center"
+        android:textColor="#D32F2F"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btn_phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_notification"
+        android:background="@drawable/circularbutton"
+        android:elevation="10dp"
+        android:src="@drawable/ic_phone" />
+
+    <ImageButton
+        android:id="@+id/btn_notification"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="7dp"
+        android:layout_toLeftOf="@+id/btn_menu"
+        android:background="@drawable/circularbutton"
+        android:elevation="10dp"
+        android:src="@drawable/ic_bell" />
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/circularbutton"
+        android:elevation="10dp"
+        android:src="@drawable/ic_menu_black_24dp" />
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppbarLayout_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_bar_layout_gradiant"
+        android:layout_below="@+id/tv_Financial"
+        android:layout_marginTop="20dp">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayout_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="#fff">
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AppbarLayout_common"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_trigger"
+        android:icon="@drawable/ic_megaphone"
+        android:title="My trigger" />
+    <item
+        android:id="@+id/nav_ticker"
+        android:icon="@drawable/ic_ticker"
+        android:title="My ticker" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/ic_graph"
+        android:title="My report" />
+    <item
+        android:id="@+id/nav_calculator"
+        android:icon="@drawable/ic_calculator"
+        android:title="FWD. calculator" />
+
+
+
+</menu>

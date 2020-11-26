@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/CardView_Ticker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_TickerBackArrow"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+            <Spinner
+                android:id="@+id/Spin_ticker"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/iv_TickerBackArrow"/>
+
+            <ImageButton
+                android:id="@+id/btn_trigger"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="96dp"
+                android:background="@drawable/circularbutton"
+                android:elevation="30dp"
+                android:src="@drawable/ic_megaphone" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/circularbutton"
+                android:elevation="30dp"
+                android:src="@drawable/ic_menu_black_24dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_bar_layout_gradiant"
+        android:layout_below="@+id/CardView_Ticker">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayout_Ticker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="#fff">
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+ <android.support.v4.view.ViewPager
+     android:id="@+id/ViewPager"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/AppbarLayout"/>
+</RelativeLayout>
